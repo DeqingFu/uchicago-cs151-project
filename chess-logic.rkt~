@@ -528,43 +528,43 @@
     (Castles #t #t #t #t))
    (Loc 7 4)))
  (sort-moves (list
-              (StdMove
-               (Loc 7 4)
-               (Loc 6 4)
-               (Piece 'King 'White)
-               'None)
-              (StdMove
-               (Loc 7 4)
-               (Loc 6 5)
-               (Piece 'King 'White)
-               'None)
-              (StdMove
-               (Loc 7 4)
-               (Loc 7 5)
-               (Piece 'King 'White)
-               'None)
-              (StdMove
-               (Loc 7 4)
-               (Loc 7 3)
-               (Piece 'King 'White)
-               'None)
-              (StdMove
-               (Loc 7 4)
-               (Loc 6 3)
-               (Piece 'King 'White)
-               'None)
-              (CastleMove
-               (Loc 7 4)
-               (Loc 7 1)
-               (Loc 7 0)
-               (Loc 7 2)
-               'White)
-              (CastleMove
-               (Loc 7 4)
-               (Loc 7 6)
-               (Loc 7 7)
-               (Loc 7 5)
-               'White))))
+ (StdMove
+  (Loc 7 4)
+  (Loc 6 4)
+  (Piece 'King 'White)
+  'None)
+ (StdMove
+  (Loc 7 4)
+  (Loc 6 5)
+  (Piece 'King 'White)
+  'None)
+ (StdMove
+  (Loc 7 4)
+  (Loc 7 5)
+  (Piece 'King 'White)
+  'None)
+ (StdMove
+  (Loc 7 4)
+  (Loc 7 3)
+  (Piece 'King 'White)
+  'None)
+ (StdMove
+  (Loc 7 4)
+  (Loc 6 3)
+  (Piece 'King 'White)
+  'None)
+ (CastleMove
+  (Loc 7 4)
+  (Loc 7 1)
+  (Loc 7 0)
+  (Loc 7 2)
+  'White)
+ (CastleMove
+  (Loc 7 4)
+  (Loc 7 6)
+  (Loc 7 7)
+  (Loc 7 5)
+  'White))))
 
 (: moves-rook (Board Loc -> (Listof Move)))
 ;; return the list of moves available to a rook
@@ -777,105 +777,105 @@
     (Castles #t #t #f #f))
    (Loc 1 1)))
  (sort-moves (list
-              (PromoMove
-               (Loc 1 1)
-               (Loc 0 1)
-               (Piece 'Pawn 'White)
-               'None
-               'Queen)
-              (PromoMove
-               (Loc 1 1)
-               (Loc 0 2)
-               (Piece 'Pawn 'White)
-               (Some
-                (Piece 'Bishop 'Black))
-               'Queen)
-              (PromoMove
-               (Loc 1 1)
-               (Loc 0 0)
-               (Piece 'Pawn 'White)
-               (Some
-                (Piece 'Rook 'Black))
-               'Queen)
-              (PromoMove
-               (Loc 1 1)
-               (Loc 0 1)
-               (Piece 'Pawn 'White)
-               'None
-               'Knight)
-              (PromoMove
-               (Loc 1 1)
-               (Loc 0 2)
-               (Piece 'Pawn 'White)
-               (Some
-                (Piece 'Bishop 'Black))
-               'Knight)
-              (PromoMove
-               (Loc 1 1)
-               (Loc 0 0)
-               (Piece 'Pawn 'White)
-               (Some
-                (Piece 'Rook 'Black))
-               'Knight)
-              (PromoMove
-               (Loc 1 1)
-               (Loc 0 1)
-               (Piece 'Pawn 'White)
-               'None
-               'Bishop)
-              (PromoMove
-               (Loc 1 1)
-               (Loc 0 2)
-               (Piece 'Pawn 'White)
-               (Some
-                (Piece 'Bishop 'Black))
-               'Bishop)
-              (PromoMove
-               (Loc 1 1)
-               (Loc 0 0)
-               (Piece 'Pawn 'White)
-               (Some
-                (Piece 'Rook 'Black))
-               'Bishop)
-              (PromoMove
-               (Loc 1 1)
-               (Loc 0 1)
-               (Piece 'Pawn 'White)
-               'None
-               'Rook)
-              (PromoMove
-               (Loc 1 1)
-               (Loc 0 2)
-               (Piece 'Pawn 'White)
-               (Some
-                (Piece 'Bishop 'Black))
-               'Rook)
-              (PromoMove
-               (Loc 1 1)
-               (Loc 0 0)
-               (Piece 'Pawn 'White)
-               (Some
-                (Piece 'Rook 'Black))
-               'Rook)
-              (StdMove
-               (Loc 1 1)
-               (Loc 0 0)
-               (Piece 'Pawn 'White)
-               (Some
-                (Piece 'Rook 'Black)))
-              (StdMove
-               (Loc 1 1)
-               (Loc 0 1)
-               (Piece 'Pawn 'White)
-               'None)
-              (StdMove
-               (Loc 1 1)
-               (Loc 0 2)
-               (Piece 'Pawn 'White)
-               (Some
-                (Piece
-                 'Bishop
-                 'Black))))))
+ (PromoMove
+  (Loc 1 1)
+  (Loc 0 1)
+  (Piece 'Pawn 'White)
+  'None
+  'Queen)
+ (PromoMove
+  (Loc 1 1)
+  (Loc 0 2)
+  (Piece 'Pawn 'White)
+  (Some
+   (Piece 'Bishop 'Black))
+  'Queen)
+ (PromoMove
+  (Loc 1 1)
+  (Loc 0 0)
+  (Piece 'Pawn 'White)
+  (Some
+   (Piece 'Rook 'Black))
+  'Queen)
+ (PromoMove
+  (Loc 1 1)
+  (Loc 0 1)
+  (Piece 'Pawn 'White)
+  'None
+  'Knight)
+ (PromoMove
+  (Loc 1 1)
+  (Loc 0 2)
+  (Piece 'Pawn 'White)
+  (Some
+   (Piece 'Bishop 'Black))
+  'Knight)
+ (PromoMove
+  (Loc 1 1)
+  (Loc 0 0)
+  (Piece 'Pawn 'White)
+  (Some
+   (Piece 'Rook 'Black))
+  'Knight)
+ (PromoMove
+  (Loc 1 1)
+  (Loc 0 1)
+  (Piece 'Pawn 'White)
+  'None
+  'Bishop)
+ (PromoMove
+  (Loc 1 1)
+  (Loc 0 2)
+  (Piece 'Pawn 'White)
+  (Some
+   (Piece 'Bishop 'Black))
+  'Bishop)
+ (PromoMove
+  (Loc 1 1)
+  (Loc 0 0)
+  (Piece 'Pawn 'White)
+  (Some
+   (Piece 'Rook 'Black))
+  'Bishop)
+ (PromoMove
+  (Loc 1 1)
+  (Loc 0 1)
+  (Piece 'Pawn 'White)
+  'None
+  'Rook)
+ (PromoMove
+  (Loc 1 1)
+  (Loc 0 2)
+  (Piece 'Pawn 'White)
+  (Some
+   (Piece 'Bishop 'Black))
+  'Rook)
+ (PromoMove
+  (Loc 1 1)
+  (Loc 0 0)
+  (Piece 'Pawn 'White)
+  (Some
+   (Piece 'Rook 'Black))
+  'Rook)
+ (StdMove
+  (Loc 1 1)
+  (Loc 0 0)
+  (Piece 'Pawn 'White)
+  (Some
+   (Piece 'Rook 'Black)))
+ (StdMove
+  (Loc 1 1)
+  (Loc 0 1)
+  (Piece 'Pawn 'White)
+  'None)
+ (StdMove
+  (Loc 1 1)
+  (Loc 0 2)
+  (Piece 'Pawn 'White)
+  (Some
+   (Piece
+    'Bishop
+    'Black))))))
 
 ;; === checking for check
 
@@ -1080,32 +1080,32 @@
     (Castles #t #t #f #f))
    (Loc 0 4)))
  (sort-moves (list
-              (StdMove
-               (Loc 0 4)
-               (Loc 0 5)
-               (Piece 'King 'Black)
-               'None)
-              (StdMove
-               (Loc 0 4)
-               (Loc 1 5)
-               (Piece 'King 'Black)
-               'None)
-              (StdMove
-               (Loc 0 4)
-               (Loc 1 4)
-               (Piece 'King 'Black)
-               'None)
-              (StdMove
-               (Loc 0 4)
-               (Loc 1 3)
-               (Piece 'King 'Black)
-               'None)
-              (CastleMove
-               (Loc 0 4)
-               (Loc 0 6)
-               (Loc 0 7)
-               (Loc 0 5)
-               'Black))))
+ (StdMove
+  (Loc 0 4)
+  (Loc 0 5)
+  (Piece 'King 'Black)
+  'None)
+ (StdMove
+  (Loc 0 4)
+  (Loc 1 5)
+  (Piece 'King 'Black)
+  'None)
+ (StdMove
+  (Loc 0 4)
+  (Loc 1 4)
+  (Piece 'King 'Black)
+  'None)
+ (StdMove
+  (Loc 0 4)
+  (Loc 1 3)
+  (Piece 'King 'Black)
+  'None)
+ (CastleMove
+  (Loc 0 4)
+  (Loc 0 6)
+  (Loc 0 7)
+  (Loc 0 5)
+  'Black))))
 
 (: enP? : ChessGame Move -> Boolean)
 ;; test if a move is en passant
@@ -1604,24 +1604,24 @@
   (match m
     [(StdMove src dst moved captured)
      (GRADER_pipes (list "StdMove"
-                         (GRADER_loc->str src)
-                         (GRADER_loc->str dst)
-                         (GRADER_piece->str moved)
-                         (GRADER_opt-map GRADER_piece->str captured "None")))]
+                  (GRADER_loc->str src)
+                  (GRADER_loc->str dst)
+                  (GRADER_piece->str moved)
+                  (GRADER_opt-map GRADER_piece->str captured "None")))]
     [(CastleMove ks kd rs rd moved)
      (GRADER_pipes (list "CastleMove"
-                         (GRADER_loc->str ks)
-                         (GRADER_loc->str kd)
-                         (GRADER_loc->str rs)
-                         (GRADER_loc->str rd)
-                         (symbol->string moved)))]
+                  (GRADER_loc->str ks)
+                  (GRADER_loc->str kd)
+                  (GRADER_loc->str rs)
+                  (GRADER_loc->str rd)
+                  (symbol->string moved)))]
     [(PromoMove src dst moved captured pro)
      (GRADER_pipes (list "PromoMove"
-                         (GRADER_loc->str src)
-                         (GRADER_loc->str dst)
-                         (GRADER_piece->str moved)
-                         (GRADER_opt-map GRADER_piece->str captured "None")
-                         (symbol->string pro)))]))
+                  (GRADER_loc->str src)
+                  (GRADER_loc->str dst)
+                  (GRADER_piece->str moved)
+                  (GRADER_opt-map GRADER_piece->str captured "None")
+                  (symbol->string pro)))]))
 
 (: GRADER_loc->str (Loc -> String))
 ;; return string representation of location
@@ -1695,22 +1695,22 @@
 (check-expect
  (board-update GRADER_starting-board (Loc 0 7) (Some (Piece 'Pawn 'White)))
  (GRADER_board-update GRADER_starting-board (Loc 0 7)
-                      (Some (Piece 'Pawn 'White))))
+ (Some (Piece 'Pawn 'White))))
 
 (check-expect
  (board-update GRADER_starting-board (Loc 7 0) (Some (Piece 'Rook 'Black)))
  (GRADER_board-update GRADER_starting-board (Loc 7 0)
-                      (Some (Piece 'Rook 'Black))))
+ (Some (Piece 'Rook 'Black))))
 
 (check-expect
  (board-update GRADER_starting-board (Loc 7 7) (Some (Piece 'Queen 'Black)))
  (GRADER_board-update GRADER_starting-board (Loc 7 7)
-                      (Some (Piece 'Queen 'Black))))
+ (Some (Piece 'Queen 'Black))))
 
 (check-expect
  (board-update GRADER_starting-board (Loc 4 5) (Some (Piece 'Knight 'Black)))
  (GRADER_board-update GRADER_starting-board (Loc 4 5)
-                      (Some (Piece 'Knight 'Black))))
+ (Some (Piece 'Knight 'Black))))
 
 (: GRADER_imrb : Board)
 (define GRADER_imrb
@@ -1819,7 +1819,7 @@
 (check-expect
  (legal-move? GRADER_inmediares
               (StdMove (Loc 3 2) (Loc 4 3) (Piece 'Pawn 'Black)
-                       (Some (Piece 'Pawn 'White))))
+  (Some (Piece 'Pawn 'White))))
  #t)
 
 (check-expect
@@ -1895,7 +1895,7 @@
 (check-expect
  (legal-move? GRADER_inmediares
               (StdMove (Loc 3 6) (Loc 6 6) (Piece 'Queen 'Black)
-                       (Some (Piece 'Pawn 'White))))
+ (Some (Piece 'Pawn 'White))))
  #t)
 
 (check-expect
@@ -1911,7 +1911,7 @@
 (check-expect
  (legal-move? GRADER_inmediares
               (StdMove (Loc 3 6) (Loc 1 4) (Piece 'Queen 'Black)
-                       (Some (Piece 'Pawn 'White))))
+ (Some (Piece 'Pawn 'White))))
  #f)
 
 (check-expect
@@ -1937,7 +1937,7 @@
 (check-expect
  (legal-move? GRADER_inmediares
               (StdMove (Loc 3 6) (Loc 7 2) (Piece 'Queen 'Black)
-                       (Some (Piece 'Bishop 'White))))
+  (Some (Piece 'Bishop 'White))))
  #t)
 
 (check-expect
@@ -2158,7 +2158,7 @@
 
 (: GRADER_escape_cap : ChessGame)
 (define GRADER_escape_cap (ChessGame GRADER_cmcb
-                                     'Black '() (Castles #f #f #f #f)))
+  'Black '() (Castles #f #f #f #f)))
 
 (: GRADER_cmmb : Board)
 (define GRADER_cmmb
